@@ -6,7 +6,7 @@ conn = psycopg2.connect(
    user="postgres",
    password="Vera1234?"
 )
-#nisse
+# use list, add, delete
 def read_dict(C):
     cur = C.cursor()
     cur.execute("SELECT id, word, translation FROM dictionary;")
